@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de ingreso de productos:</h1>
+
+    <form action="/uploadfile" enctype="multipart/form-data" method="post">
+
+        <!--ID Field-->
+        <div>
+            <label for="productID">ID</label><br>
+            <input type="number", id="productID", name="productID" required>
+        </div>
+        <!--Item Field-->
+        <div>
+            <label for="myItem">Item</label><br>
+            <input type="text", id="myItem", name="myItem" required>
+        </div>
+        <!--Price Field-->
+        <div>
+            <label for="precio">Price</label><br>
+            <input type="text", id="precio", name="precio" required>
+        </div>
+        <br>
+        <!--Product Upload-->
+        <p>Product Image:</p>
+        <input type="file", name="myFile">
+        <br><br>
+        <!--Submit Button-->
+        <input type="submit", value="Upload a product">
+    </form>
+
+    <script></script>
+</body>
+</html>
